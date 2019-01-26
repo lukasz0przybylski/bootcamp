@@ -1,0 +1,8 @@
+def czy_palidrom(tekst):
+    tekst = "".join(text.lower().split())
+
+
+
+napis = "to jest napis"
+napis = napis.lower().split()
+"".join(napis)
