@@ -1,3 +1,6 @@
+import pytest
+import random
+
 class Przedmiot:
     def __init__(self, nazwa, bonus):
         self.nazwa = nazwa
@@ -21,9 +24,12 @@ class Postac:
 
     @property
     def atak(self):
-        return self._atak
+        return self._atak + sum([e.bonus_do_ataku for e in self.ewipunek])
+
+
 
     def otrzymaj_obrazenia(self, obrazenia):
+        print()
         self.zdrowie -= obrazenia
         if self.zdrowie < 0:
             self.zdrowie = 0
@@ -33,7 +39,10 @@ class Postac:
         if self.zdrowie > self.max_zdrowie:
             self.zdrowie = self.max_zdrowie
 
-    def dodaj_przedmiot(self):
+    def dodaj_przedmiot(self, przedmiot):
+        self.ewipunek
+
+
 
 
 
