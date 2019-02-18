@@ -1,0 +1,15 @@
+import tkinter
+
+root = tkinter.Tk()
+
+
+dystans_label = tkinter.Label(master=root, text="Dystans: ")
+dystans_label.grid(row=1, column=0)
+spalanie tkinter.Entry(master=root)
+spalanie.grid(row)
+
+
+
+
+
+root.mainloop()

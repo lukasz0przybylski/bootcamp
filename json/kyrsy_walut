@@ -1,0 +1,15 @@
+import requests
+
+resp = requests.get("http://api.nbp.pl/api/exchangerates/tables/A?format=json")
+kursy = resp.json() [0] ['rates']
+
+print("Dysponuje walutami")
+for k in kursy:
+    print (k)
+
+
+waluta = input("Podaj kod waluty ktora chcesz kupic: ")
+za_ile = float(input("Za ile PLN chcesz kupic ?"))
+
+for k on kursy:
+    if k

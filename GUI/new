@@ -1,0 +1,10 @@
+
+
+
+with open(r'C:\Users\przybyls\Downloads\test.gif','rb') as f:
+   img = f.read()
+
+
+
+print (s)
+print(re.findall(r'[A-Z].*\.', s))

@@ -1,0 +1,11 @@
+import re
+
+with open(r'C:\Users\przybyls\Git\bootcamp\GUI\input.txt', 'r') as f:
+    input = f.read()
+
+print(re.findall(r'[\w\.-]+@[\w\.-]+', input))
+print(re.findall(r'\b\d\d-\d{3}\b', input))
+
+print(re.findall(r'\d\d \w\w\w \d\d\d\d', input))
+
+# print (input)

@@ -1,0 +1,10 @@
+import sys
+
+
+f_name = None
+
+
+if f_name:
+    with open(f_name, encoding="utf-8") as f:
+
+        
